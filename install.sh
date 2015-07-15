@@ -20,4 +20,4 @@ done
 
 echo "Done."
 echo ""
-echo "Restart IntelliJ and/or AndroidStudio, go to preferences, and apply 'Prolific' or 'ProlificAndroid'."
+echo "Restart IntelliJ and/or AndroidStudio, go to preferences, and apply 'ProlificAndroid'."
