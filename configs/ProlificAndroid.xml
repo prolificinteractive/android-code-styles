@@ -199,6 +199,7 @@
     <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
     <option name="ALIGN_MULTILINE_FOR" value="false" />
     <option name="ALIGN_MULTILINE_TERNARY_OPERATION" value="true" />
+    <option name="ALIGN_GROUP_FIELD_DECLARATIONS" value="true" />
     <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
     <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
     <option name="CALL_PARAMETERS_WRAP" value="1" />
