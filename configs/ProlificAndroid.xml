@@ -95,7 +95,6 @@
     </option>
   </AndroidXmlCodeStyleSettings>
   <JavaCodeStyleSettings>
-    <option name="DO_NOT_WRAP_AFTER_SINGLE_ANNOTATION" value="true" />
     <option name="ANNOTATION_PARAMETER_WRAP" value="1" />
     <option name="ALIGN_MULTILINE_ANNOTATION_PARAMETERS" value="true" />
     <option name="CLASS_NAMES_IN_JAVADOC" value="3" />
@@ -198,7 +197,6 @@
     <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
     <option name="ALIGN_MULTILINE_FOR" value="false" />
     <option name="ALIGN_MULTILINE_TERNARY_OPERATION" value="true" />
-    <option name="ALIGN_GROUP_FIELD_DECLARATIONS" value="true" />
     <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
     <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
     <option name="CALL_PARAMETERS_WRAP" value="1" />
@@ -225,7 +223,9 @@
     <option name="IF_BRACE_FORCE" value="3" />
     <option name="DOWHILE_BRACE_FORCE" value="1" />
     <option name="WHILE_BRACE_FORCE" value="1" />
-    <option name="VARIABLE_ANNOTATION_WRAP" value="1" />
+    <option name="METHOD_ANNOTATION_WRAP" value="0" />
+    <option name="CLASS_ANNOTATION_WRAP" value="0" />
+    <option name="FIELD_ANNOTATION_WRAP" value="0" />
     <option name="ENUM_CONSTANTS_WRAP" value="2" />
     <option name="PARENT_SETTINGS_INSTALLED" value="true" />
     <indentOptions>
