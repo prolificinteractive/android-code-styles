@@ -556,6 +556,26 @@
           <rule>
             <match>
               <AND>
+                <NAME>onCreateOptionsMenu</NAME>
+                <OVERRIDDEN />
+              </AND>
+            </match>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
+              <AND>
+                <NAME>onOptionsItemSelected</NAME>
+                <OVERRIDDEN />
+              </AND>
+            </match>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
+              <AND>
                 <NAME>onPause</NAME>
                 <OVERRIDDEN />
               </AND>
@@ -647,6 +667,7 @@
                 <PUBLIC>true</PUBLIC>
               </AND>
             </match>
+            <order>BY_NAME</order>
           </rule>
         </section>
         <section>
@@ -654,6 +675,7 @@
             <match>
               <METHOD>true</METHOD>
             </match>
+            <order>BY_NAME</order>
           </rule>
         </section>
         <section>
@@ -661,6 +683,7 @@
             <match>
               <ENUM>true</ENUM>
             </match>
+            <order>BY_NAME</order>
           </rule>
         </section>
         <section>
@@ -668,6 +691,7 @@
             <match>
               <INTERFACE>true</INTERFACE>
             </match>
+            <order>BY_NAME</order>
           </rule>
         </section>
         <section>
@@ -678,6 +702,7 @@
                 <STATIC>true</STATIC>
               </AND>
             </match>
+            <order>BY_NAME</order>
           </rule>
         </section>
         <section>
@@ -685,6 +710,7 @@
             <match>
               <CLASS>true</CLASS>
             </match>
+            <order>BY_NAME</order>
           </rule>
         </section>
       </rules>
