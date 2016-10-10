@@ -22,7 +22,6 @@ Adding Code Quality Checks to Project
 
  * __Run the task using `./gradlew check`__
 
-
 License
 -------
 
