@@ -212,7 +212,10 @@
     <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
     <option name="ALIGN_MULTILINE_FOR" value="false" />
     <option name="ALIGN_MULTILINE_TERNARY_OPERATION" value="true" />
+    <option name="SPACE_WITHIN_WHILE_PARENTHESES" value="true" />
+    <option name="SPACE_WITHIN_BRACES" value="true" />
     <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
+    <option name="SPACE_WITHIN_EMPTY_ARRAY_INITIALIZER_BRACES" value="true" />
     <option name="SPACE_BEFORE_WHILE_PARENTHESES" value="false" />
     <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
     <option name="CALL_PARAMETERS_WRAP" value="5" />
@@ -243,6 +246,7 @@
     <option name="IF_BRACE_FORCE" value="3" />
     <option name="DOWHILE_BRACE_FORCE" value="1" />
     <option name="WHILE_BRACE_FORCE" value="1" />
+    <option name="WRAP_LONG_LINES" value="true" />
     <option name="METHOD_ANNOTATION_WRAP" value="0" />
     <option name="CLASS_ANNOTATION_WRAP" value="0" />
     <option name="FIELD_ANNOTATION_WRAP" value="0" />
@@ -761,6 +765,39 @@
         <section>
           <rule>
             <match>
+              <AND>
+                <METHOD>true</METHOD>
+                <PROTECTED>true</PROTECTED>
+              </AND>
+            </match>
+            <order>BY_NAME</order>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
+              <AND>
+                <METHOD>true</METHOD>
+                <PACKAGE_PRIVATE>true</PACKAGE_PRIVATE>
+              </AND>
+            </match>
+            <order>BY_NAME</order>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
+              <AND>
+                <METHOD>true</METHOD>
+                <PRIVATE>true</PRIVATE>
+              </AND>
+            </match>
+            <order>BY_NAME</order>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
               <METHOD>true</METHOD>
             </match>
             <order>BY_NAME</order>
@@ -958,10 +995,7 @@
         <section>
           <rule>
             <match>
-              <AND>
-                <NAME>.*</NAME>
-                <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
-              </AND>
+              <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
             </match>
             <order>BY_NAME</order>
           </rule>
@@ -969,7 +1003,7 @@
         <section>
           <rule>
             <match>
-              <NAME>.*(?&lt;!style)$</NAME>
+              <XML_NAMESPACE>http://schemas.android.com/apk/res-auto</XML_NAMESPACE>
             </match>
             <order>BY_NAME</order>
           </rule>
@@ -977,11 +1011,15 @@
         <section>
           <rule>
             <match>
-              <AND>
-                <NAME>.*</NAME>
-                <XML_ATTRIBUTE />
-                <XML_NAMESPACE>http://schemas.android.com/tools</XML_NAMESPACE>
-              </AND>
+              <XML_NAMESPACE>http://schemas.android.com/tools</XML_NAMESPACE>
+            </match>
+            <order>BY_NAME</order>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
+              <NAME>.*</NAME>
             </match>
             <order>BY_NAME</order>
           </rule>
