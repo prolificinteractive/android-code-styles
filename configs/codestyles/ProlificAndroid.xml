@@ -735,6 +735,17 @@
             <match>
               <AND>
                 <METHOD>true</METHOD>
+                <NAME>observeView</NAME>
+                <OVERRIDDEN />
+              </AND>
+            </match>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
+              <AND>
+                <METHOD>true</METHOD>
                 <NAME>toBuilder</NAME>
               </AND>
             </match>
